@@ -11,7 +11,7 @@ import wind_icon from '../assets/wind.png'
 
 const Weather = () => {
   const inputRef = useRef()
-  const [weatherData, setWeatherData] = useState(null)
+  const [weatherData, setWeatherData] = useSgittate(null)
   const allIcons = {
     "01d": clear_icon,
     "01n": clear_icon,
