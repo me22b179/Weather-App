@@ -11,7 +11,7 @@ import wind_icon from '../assets/wind.png'
 
 const Weather = () => {
   const inputRef = useRef()
-  const [weatherData, setWeatherData] = useSgittate(null)
+  const [weatherData, setWeatherData] = useState(null)
   const allIcons = {
     "01d": clear_icon,
     "01n": clear_icon,
@@ -55,10 +55,10 @@ const Weather = () => {
       });
 
     } catch (error) {
-        setWeatherData(false)
-      console.error("Error fetching weather data:");
+      setWeatherData(null);
+      console.error("Error fetching weather data:",error);
     }
-  }
+  };
 
   useEffect(() => {
     search("Chennai");
