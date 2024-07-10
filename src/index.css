@@ -9,5 +9,8 @@
   min-height: 100vh;
   display: grid;
   background: #a89c9c;
+  background-image: url("C:\Weather App\src\assets\bg.webp");
+  background-size: cover; 
+  background-position: center;
 
 }
